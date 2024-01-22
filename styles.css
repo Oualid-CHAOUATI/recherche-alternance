@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  block-size: border-box;
+}
+
+:root {
+  --bg-color: #000;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text-color);
+  padding: 2em;
+  display: grid;
+  text-align: center;
+}
+
+body,
+main {
+  display: grid;
+  gap: 2em;
+}
+
+nav {
+  display: grid;
+  gap: 0.4em;
+}
+nav .link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: inherit;
+  text-decoration: none;
+}
+nav svg {
+  width: 2em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.presentation {
+  max-width: 50ch;
+  margin-inline: auto;
+}
+
+.alternance-infos {
+  padding-left: 2em;
+  padding-block: 1em;
+  display: grid;
+  gap: 1em;
+  background-color: white;
+  color: black;
+}
+.alternance-infos .alternance-infos-title {
+  font-size: 1.3em;
+}
+.alternance-infos p {
+  padding-left: 2em;
+}
+
+.joke {
+  font-size: 1.8em;
+  font-family: "Italiana", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+
+a#cv {
+  font-size: 1.7em;
+  color: yellow;
+}/*# sourceMappingURL=styles.css.map */
