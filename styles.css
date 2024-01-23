@@ -84,6 +84,7 @@ p {
   font-family: "Italiana", sans-serif;
   font-family: "DM Mono", monospace;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 a#cv {

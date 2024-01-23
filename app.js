@@ -54,7 +54,7 @@ class StringEffect {
     this._changeTextIndex();
     setTimeout(() => {
       this.handleToggleEffect();
-    }, 2000);
+    }, 4000);
   }
   async _aplyEffect() {
     for (let i = 0; i < this.maxCharIndex; i++) {
@@ -64,7 +64,6 @@ class StringEffect {
   }
 
   _changeSpanChar(char, index, rapid = null) {
-    console.log(this.spans);
     return new Promise((resolve, reject) => {
       let attemps = Math.random() * 5 + 1;
 
