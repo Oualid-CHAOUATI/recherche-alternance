@@ -10,7 +10,7 @@
 }
 body {
   background-color: var(--bg-color);
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
   font-family: "Nunito Sans", sans-serif;
   color: var(--text-color);
 
@@ -31,15 +31,28 @@ nav {
   display: grid;
   gap: 0.4em;
 
-  .link-wrapper {
+  a.link-wrapper {
     display: flex;
     align-items: center;
     gap: 1em;
     color: inherit;
     text-decoration: none;
+    transition: 200ms;
   }
   svg {
     width: 2em;
+    display: block;
+    transition: 200ms;
+  }
+}
+
+nav:has(a:hover) {
+  a:not(:hover) {
+    opacity: 0.5;
+
+    svg {
+      transform: scale(0.8);
+    }
   }
 }
 
@@ -59,8 +72,13 @@ p {
   //has .alternance-infos-title
   //has p
 
-  background-color: white;
+  --inner-bg: #5839a5;
+  background-color: var(--inner-bg);
+  box-shadow: 0 0 0 1000vmax var(--inner-bg);
+  clip-path: inset(0 -1000vmax);
+
   color: black;
+  color: white;
   .alternance-infos-title {
     font-size: 1.3em;
   }
@@ -71,14 +89,38 @@ p {
 }
 
 .joke {
-  font-size: 1.8em;
+  font-size: 1.3em;
 
   font-family: "Italiana", sans-serif;
+  font-family: "DM Mono", monospace;
   font-weight: 100;
-  letter-spacing: 0.2em;
+  // letter-spacing: 0.2em;
 }
 
 a#cv {
   font-size: 1.7em;
   color: yellow;
+}
+
+.invit {
+  color: rgb(139, 139, 245);
+}
+
+a#formation {
+  --inner-bg: rgba(115, 90, 226, 0.445);
+  --offset: 60%;
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(
+    transparent var(--offset),
+    var(--inner-bg) var(--offset)
+  );
+  transition: 200ms;
+}
+
+#string-effet {
+  .spans-wrapper span {
+    display: inline-block;
+    min-width: 1ch;
+  }
 }

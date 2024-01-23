@@ -14,10 +14,10 @@
 
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
 
-
+    <script src="app.js" defer></script>
 
 </head>
 
@@ -92,7 +92,9 @@
 
         <p class="presentation">
             Salut toi ✌️, moi c’est Oualid, et je suis actuellement à la recherche d’une entreprise pour mon alternance
-            en développement web au sein de l’école ESGI.
+            en <a href="https://www.esgi.fr/programmes/ingenierie-web.html" target="_blank" id="formation">
+                Ingénierie du web au sein de l’école ESGI.
+            </a>
 
         </p>
         <a href="#" id="cv">Trouve ici mon CV </a>
@@ -101,15 +103,27 @@
         <div class="alternance-infos">
             <div>
                 <h3 class="alternance-infos-title">⏳ Rythme d’alternance :</h3>
-                <p>
-                    👉 3 semaines en entreprise / 1 semaine en cours
+                <p style="display: grid;">
+                    <span>
+                        👉 3 semaines en entreprise
+                    </span>
+                    <span>
+                        👉 1 semaine en cours
+
+                    </span>
 
                 </p>
             </div>
             <div>
                 <h3 class="alternance-infos-title">️📝 Durée :</h3>
-                <p>
-                    👉 18 mois ou 24 mois, à partir de maintenant (J'ai HÂTE 🔥)
+                <p style=" display: grid;">
+                    <span>
+                        👉 18 mois ou 24 mois
+                    </span>
+                    <span>
+
+                        à partir de maintenant (J'ai HÂTE 🔥)
+                    </span>
 
                 </p>
             </div>
@@ -119,7 +133,8 @@
 
         <div class="joke">
             <h1>Le développement web</h1>
-            <h1>c'est ma vie, c'est mon oxygene</h1>
+            <h1 id="string-effet">c'est </h1>
+
         </div>
 
         <p>Cette voie s'avère idéale pour moi, car elle me permettra d'acquérir des connaissances solides, étayées par
@@ -127,7 +142,7 @@
             me donnera l'opportunité d'exprimer ma créativité.
         </p>
 
-        <p>N'hésite pas à partager ma recherche, s'il te plaît 🫶</p>
+        <p class="invit">N'hésite pas à partager ma recherche, s'il te plaît 🫶</p>
     </main>
 
 </body>
