@@ -75,8 +75,8 @@ p {
 .alternance-infos .alternance-infos-title {
   font-size: 1.3em;
 }
-.alternance-infos p {
-  padding-left: 2em;
+.alternance-infos ul {
+  display: grid;
 }
 
 .joke {
