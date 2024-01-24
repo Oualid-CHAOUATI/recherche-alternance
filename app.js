@@ -27,8 +27,8 @@ class StringEffect {
   }
 
   _changeTextIndex() {
-    this.textIndex++;
-    this.textIndex = this.textIndex % this.texts.length;
+    // this.textIndex++;
+    this.textIndex = ++this.textIndex % this.texts.length;
   }
 
   createWrapper() {

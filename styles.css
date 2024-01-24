@@ -17,6 +17,7 @@ body {
   padding: 2em;
   display: grid;
   text-align: center;
+  cursor: url("./assets/svgs/cursor.svg"), auto;
 }
 
 body,
@@ -108,4 +109,8 @@ a#formation {
 #string-effet .spans-wrapper span {
   display: inline-block;
   min-width: 1ch;
+}
+
+a:hover {
+  cursor: url("./assets/svgs/pointer-cursor.svg"), auto;
 }/*# sourceMappingURL=styles.css.map */
